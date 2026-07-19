@@ -1,0 +1,110 @@
+/* Reset cơ bản cho trang web */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Kiểu dáng cho Header */
+.site{
+  display: flex; /* Kích hoạt Flexbox */
+  justify-content: space-between; /* Đẩy logo và nút ra 2 góc, menu ở giữa */
+  align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+  padding: 50px 50px; /* Tạo khoảng trống xung quanh */
+  background-color: #ff8a05; /* Nền trắng */
+  box-shadow: 0 4px 10px rgba(0, 0.5, 0.1, 0.05); /* Đổ bóng nhẹ tạo độ sâu */
+  /* Cố định header khi cuộn chuột (Tùy chọn) */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px; /* Khoảng cách giữa các chữ trong menu */
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #555555;
+  font-weight: 500;
+  font-size: 25px;
+  transition: color 0.3s ease; /* Hiệu ứng chuyển màu mượt mà */
+  position: relative;
+  boder
+}
+
+/* Hiệu ứng di chuột (Hover) cho Menu: Gạch chân hiện ra */
+.main-nav a:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #3498db;
+  transition: width 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #3498db;
+}
+.main-nav a:hover::after {
+  width: 100%; /* Gạch chân chạy dài ra khi di chuột */
+}
+article{
+    background: #F5DEB3;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    position: relative;
+    border: 4px solid #FF8C00;
+    flex:1;
+    
+   
+}
+.l1{
+    background-color: #da7c24;
+  box-shadow: 0 4px 10px rgba(189, 103, 5, 0.781);
+    display: flex;
+    margin-bottom: 2rem;
+
+}
+section{
+   display: flex;
+  flex-wrap: wrap;}
+
+article:hover{
+    background-color:rgb(59, 179, 23);
+    padding: 1.6rem;
+    box-shadow: 0 4px 12px rgba(139, 199, 28, 0.692);
+    position: relative;
+    border: 4px solid #12011f;
+}
+.thienlong{    background-color: #da7c24;
+  box-shadow: 0 4px 10px rgba(189, 103, 5, 0.781);
+    display:flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  
+flex-wrap: wrap;}
+
+
+  .thienlong>article>img{
+    width: 100%;
+  
+  }
+         footer{
+          font-style: italic;
+          font-family: Arial, Helvetica, sans-serif;
+         }       
+  .l2{
+    border: 2px sandybrown;
+    width: auto;
+    height: 400px;
+    font-style: oblique;
+    background-color: #F5DEB3;
+    text-align: center;
+    font-size: 25px;
+  }
+  
